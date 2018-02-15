@@ -3,7 +3,7 @@
 function fuckOffAMP(){
     // Check whether it's AMP html
     var h = document.getElementsByTagName('html');
-    if (h[0].getAttribute('amp') != null){
+    if (h[0].getAttribute('amp') != null || h[0].getAttribute('⚡') != null){
         console.log("eww vile... trying to redirect");
 
         
@@ -11,8 +11,7 @@ function fuckOffAMP(){
         eles = document.getElementsByTagName('link');
         for (var i=0; i<eles.length;i++){
             if (eles[i].getAttribute('rel') == 'canonical' && eles[i].getAttribute('rel') != window.location.href.split('#')[0]){
-                // Temporarily disabled
-                //window.location.href = eles[i].getAttribute('rel');
+                window.location.href = eles[i].getAttribute('href');
             }
         }
 
@@ -31,13 +30,15 @@ function fuckOffAMP(){
         
         // Drop the link in at the top
         document.body.insertBefore(altlink, document.body.firstChild);
+    }else{
+        console.log("Doesn't appear to be AMP'd");
     }
 
 }
 
 // Wait for the DOM to load otherwise various checks will fail
-document.addEventListener("DOMContentLoaded", function(event) { 
-  fuckOffAMP();
-});
+console.log('Anti-AMP loaded')
+fuckOffAMP();
+
 
 
