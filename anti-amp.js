@@ -1,5 +1,3 @@
-
-
 function fuckOffAMP(){
     // Check whether it's AMP html
     var h = document.getElementsByTagName('html');
@@ -12,6 +10,8 @@ function fuckOffAMP(){
         for (var i=0; i<eles.length;i++){
             if (eles[i].getAttribute('rel') == 'canonical' && eles[i].getAttribute('rel') != window.location.href.split('#')[0]){
                 window.location.href = eles[i].getAttribute('href');
+                console.log("Redirecting you");
+                return;
             }
         }
 
@@ -39,6 +39,3 @@ function fuckOffAMP(){
 // Wait for the DOM to load otherwise various checks will fail
 console.log('Anti-AMP loaded')
 fuckOffAMP();
-
-
-

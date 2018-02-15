@@ -6,7 +6,7 @@
 // @run-at document-end
 // @grant none
 // @downloadURL https://github.com/bentasker/RemoveAMP/raw/master/greasemonkey_hook.user.js
-// @version 1
+// @version 1.1
 //
 // Author: B Tasker
 // ==/UserScript==
@@ -20,7 +20,7 @@ an.setAttribute('src','https://static1.bentasker.co.uk/adblock/anti-amp/v1.js');
 an.setAttribute('type','text/javascript');
 
 // We use SRI to help ensure we don't end up fetching a compromised file
-an.setAttribute('integrity',"sha384-9vGiR/wn+A688mGafpv/bxCzCIqaOWMlHzmfD2EWr/oWP/4+29SlUg4UWynL4eoC");
+an.setAttribute('integrity',"sha384-wyofJiXdjNwcrIS22S2Cb+yvDgowQPXmcfCJQhcuvIQhaLubXP9xTTwecjOv6wUf");
 an.setAttribute('crossorigin',"anonymous");
 
 
