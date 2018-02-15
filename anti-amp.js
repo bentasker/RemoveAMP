@@ -35,5 +35,9 @@ function fuckOffAMP(){
 
 }
 
+// Wait for the DOM to load otherwise various checks will fail
+document.addEventListener("DOMContentLoaded", function(event) { 
+  fuckOffAMP();
+});
 
-fuckOffAMP();
+
