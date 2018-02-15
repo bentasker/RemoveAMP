@@ -5,6 +5,8 @@
 // @include        *://*/*
 // @run-at document-end
 // @grant none
+// @downloadURL https://github.com/bentasker/RemoveAMP/raw/master/greasemonkey_hook.user.js
+// @version 1
 //
 // Author: B Tasker
 // ==/UserScript==
