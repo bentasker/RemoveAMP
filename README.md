@@ -58,6 +58,10 @@ You'll need either GreaseMonkey or Tampermonkey (or something else compatible) i
 
 If that  doesn't work, select 'Create New Script' and paste the content of that URL in
 
+Once the user-script is enabled, if you want to verify behaviour, browse to [My simple test page](https://projectsstatic.bentasker.co.uk/MISC/MISC25/bad.html), this should automatically result in you being redirected to the canonical version of that page.
+
+
+
 
 Known Limitations
 ------------------
