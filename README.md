@@ -39,9 +39,11 @@ What the anti-amp script does, is
 * Attempt to find the canonical URL within the markup and then redirect the browser to that URL
 * If no canonical can be detected, inject a link to search [DuckDuckGo](https://duckduckgo.com/) by page title
 
-The main function involved in this work isn't injected to the page (to avoid constantly injecting a large chunk), instead a small function is injected to load the main functionality via my CDN. Your browser will cache this file so won't need to fetch particularly regularly at all.
+The main function involved in this work isn't injected to the page (to avoid constantly injecting a large chunk), instead a small function is injected to load the main functionality via my CDN. Your browser (actually, the extension) will cache this file so won't need to fetch particularly regularly at all.
 
 Although, like AMP, this means loading scripts from a central location, Unlike AMP, I take security reasonably seriously and use SubResourceIntegrity (SRI) to try and make sure that your browser will only run the script if it hasn't been tampered with in any way. In order to change this, an attacker would need to either create a hash collision or interfere with the script you have in Greasemonkey/Tampermonkey (if they can do that, you've got much bigger concerns).
+
+The script is pulled in directly by GreaseMonkey/TamperMonkey once in a while, so won't result in referrer strings reflecting your browsing appearing in my logs.
 
 Ultimately, this script is just part of some stuff I'm building to try and mitigate the effects of AMP on my devices (see [MISC-25](https://projects.bentasker.co.uk/jira_projects/browse/MISC-25.html))
 
@@ -60,7 +62,7 @@ If that  doesn't work, select 'Create New Script' and paste the content of that 
 Known Limitations
 ------------------
 
-The current version of the Greasemonkey script doesn't append any hashes to the script it injects. So sites running certain Content-Security-Policies may well refuse to run it (and trigger a warning in console, as well as to the report-uri, if defined).
+Depending on your choice of browser and extension (TamperMonkey on Chrome is unaffected,for example) some sites running certain Content-Security-Policies may well refuse to run the ant-amp code (and trigger a warning in console, as well as to the report-uri, if defined).
 
 
 
