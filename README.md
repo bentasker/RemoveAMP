@@ -2,8 +2,8 @@ RemoveAMP Greasemonkey Script
 ===============================
 
 
-About AMP 
------------
+The Problem With AMP 
+---------------------
 
 Google loves [AMP](https://www.ampproject.org/ "AMP Project"). I don't.
 
@@ -22,6 +22,17 @@ It's not much better for those running sites either. If you want to be featured 
 If limited analytics sound like a privacy win for you, keep in mind that Google is almost certainly still collecting all the same data, just making less available to those who are running your page. If the argument that analytics enable webmasters to improve their service holds any weight, then that's scuppered by the limited data in AMP too.
 
 Better yet, they're also introducing [AMP For Email](https://techcrunch.com/2018/02/13/amp-for-email-is-a-terrible-idea/) - because what you really need in your inbox is emails that can change, or "interactive marketing".
+
+For more reading, see
+
+* [How to turn off accelerated Mobile Pages](https://productforums.google.com/forum/#!topic/news/ixPneB4vpGk)
+* [Google AMP Sucks](https://productforums.google.com/forum/#!topic/webmasters/z9HsohG0CVY;context-place=topicsearchin/webmasters/category$3Aaccelerated-mobile-pages-amp%7Csort:relevance%7Cspell:false)
+* [I decided to disable AMP on my site](https://www.alexkras.com/i-decided-to-disable-amp-on-my-site/)
+* [Kill Google AMP before it kills the web](https://www.theregister.co.uk/2017/05/19/open_source_insider_google_amp_bad_bad_bad/)
+* [Google AMP Sucks (another one)](https://www.reddit.com/r/webdev/comments/5i6ybb/google_amp_sucks/)
+* [The problem with AMP](https://80x24.net/post/the-problem-with-amp/)
+* [Google wants to use AMP to make email more interactive](https://techcrunch.com/2018/02/13/google-wants-to-use-amp-to-make-email-more-interactive/)
+* [Hacker News on AMP for Email](https://news.ycombinator.com/item?id=16372234)
 
 
 
