@@ -36,6 +36,3 @@ function fuckOffAMP(){
 
 }
 
-// Wait for the DOM to load otherwise various checks will fail
-console.log('Anti-AMP loaded')
-fuckOffAMP();
