@@ -1,7 +1,7 @@
 function fuckOffAMP(){
     // Check whether it's AMP html
     var h = document.getElementsByTagName('html');
-    if (h[0].getAttribute('amp') != null || h[0].getAttribute('⚡') != null){
+    if (h[0].getAttribute('amp') != null || h[0].getAttribute('⚡') != null || document.location.href.substr(0,29).toLowerCase() == 'https://www.google.com/amp/s/'){
         console.log("eww vile... trying to redirect");
 
         
