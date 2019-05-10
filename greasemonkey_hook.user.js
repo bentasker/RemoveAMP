@@ -8,7 +8,7 @@
 // @downloadURL https://github.com/bentasker/RemoveAMP/raw/master/greasemonkey_hook.user.js
 // @version 1.3
 //
-// @require https://static1.bentasker.co.uk/adblock/anti-amp/v1.3.js#sha384=ynrVTOnOEwR6j/mo66CWf4AlvHg6Z88Ff9oQdUxbnYkyl4U1Lyd5ugLsmxfN3GFT
+// @require https://static1.bentasker.co.uk/adblock/anti-amp/v1.4.js#sha384=045XNfEpw28ygqqvQ4JWNWxc6wNTiIuyv22hc43hJuJVvV3VvFPYF7fksaQbEvNO
 //
 //
 // Author: B Tasker
