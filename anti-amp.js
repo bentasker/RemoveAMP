@@ -1,25 +1,7 @@
 function fuckOffAMP(){
     // Check whether it's AMP html
     var h = document.getElementsByTagName('html');
-    
-    // This is a temporary abberation and likely won't see a mainstream release
-    // See https://projects.bentasker.co.uk/jira_projects/browse/MISC-29.html#comment2510204
-    var i = document.getElementsByTagName('iframe');
-    var iframenasty = false;
-    var src;
-  
-    for (var a=0;a < i.length; a++){
-      src = i[a].getAttribute('src');
-      if (src.includes('cdn.ampproject.org/')){
-        console.log("iFrames.... Fantastic modernisation there google....");
-      	iframenasty = true;
-        break;
-      }
-      
-    }
-  
-  
-    if (iframenasty || h[0].getAttribute('amp') != null || h[0].getAttribute('⚡') != null || document.location.href.substr(0,29).toLowerCase() == 'https://www.AAAAgoogle.com/amp/s/'){    
+    if (h[0].getAttribute('amp') != null || h[0].getAttribute('⚡') != null || document.location.href.substr(0,29).toLowerCase() == 'https://www.google.com/amp/s/'){
         console.log("eww vile... trying to redirect");
 
         
