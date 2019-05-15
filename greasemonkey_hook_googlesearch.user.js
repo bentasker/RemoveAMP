@@ -28,6 +28,10 @@ for (var i=0; i<eles.length; i++){
         continue;
     }
     
+    if (!da.includes('?')){
+        da += '?';
+    }
+    
     eles[i].href = da;
     
     for (n=0; n<bads.length; n++){
