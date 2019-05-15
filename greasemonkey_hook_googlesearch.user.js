@@ -6,10 +6,10 @@
 // @run-at document-end
 // @grant none
 // @downloadURL https://github.com/bentasker/RemoveAMP/raw/master/greasemonkey_hook_googlesearch.user.js
-// @version 1.3
+// @version 1.4.1
 //
 //
-// See https://projects.bentasker.co.uk/jira_projects/browse/MISC-29.html
+// See https://projects.bentasker.co.uk/jira_projects/browse/MISC-29.html#comment2512640
 //
 // Author: B Tasker
 // ==/UserScript==
