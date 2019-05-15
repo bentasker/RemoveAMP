@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name           AMP Removal script hook
+// @name           AMP Removal from Google Search Results
 // @namespace      http
-// @description    Hooks in the AMP removal javascript to attempt to direct to a proper page
+// @description    Attempts to remove AMP related attributes from Google search results so that you're not redirected to an AMP page in the first place
 // @include        *://*google*/search*
 // @run-at document-end
 // @grant none
