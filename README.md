@@ -81,6 +81,16 @@ Depending on your choice of browser and extension (TamperMonkey on Chrome is una
 
 
 
+Additional Scripts
+--------------------
+
+A couple of additional scripts are also provided:
+
+* https://github.com/bentasker/RemoveAMP/raw/master/greasemonkey_hook_googlesearch.user.js - Implemented for [FKAMP-2](https://projects.bentasker.co.uk/jira_projects/browse/FKAMP-2.html) to work around the fact Google doesn't declare it's AMP as AMP when a search result link is clicked.
+* https://github.com/bentasker/RemoveAMP/raw/master/redirect_to_non_amp_sites.user.js - Implemented for [FKAMP-4](https://projects.bentasker.co.uk/jira_projects/browse/FKAMP-4.html) as a nuclear option. Domains that fail to properly implement AMP (cough... Google News) get redirected to a domain that isn't so user hostile (hey, Bing's actually better than Google at something!).
+
+
+
 License
 --------
 
