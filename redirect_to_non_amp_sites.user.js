@@ -15,7 +15,7 @@
 
 
 
-redirects = {"news.google.co.uk":"https://www.bing.com/news/search?q=UK&nvaug=%5bNewsVertical+Category%3d%22rt_UK%22%5d&FORM=NSBABR"}
+redirects = {}
 
 
 
@@ -25,21 +25,6 @@ redirects = {"news.google.co.uk":"https://www.bing.com/news/search?q=UK&nvaug=%5
 function manual_redirs(){
     const urlParams = new URLSearchParams(window.location.search);
 
-
-    if (window.location.hostname == "news.google.com"){
-            var gl = urlParams.get('gl');
-            goog_map = {
-            'GB': 'https://www.bing.com/news/search?q=UK&nvaug=%5bNewsVertical+Category%3d%22rt_UK%22%5d&FORM=NSBABR'            
-            }
-            
-            if (gl in goog_map){
-                window.location.href = goog_map[gl];
-                return;
-            }
-            
-            // Otherwise, go to Bings default news page
-            window.location.href = 'https://www.bing.com/news/';
-    }
 }
 
 
