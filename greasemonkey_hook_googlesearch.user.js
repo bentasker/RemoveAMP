@@ -47,7 +47,7 @@ var AMPCheck = debounce(function() {
             if (s && s.includes('.cdn.ampproject.org/')){
 
                 // Extract the source domain name and path from the amp cdn url
-                s=s.split("?")[0];
+                s=s.split("#")[0];
                 e=s.split("/");
 
                 // Start building a new URL 
