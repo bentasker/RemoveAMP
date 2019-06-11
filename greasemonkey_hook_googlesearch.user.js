@@ -39,7 +39,7 @@ var AMPCheck = debounce(function() {
 	}
 	
 	
-	// FKAMP-4 Check for iframes pointed towards the ampproject CDN
+	// FKAMP-5 Check for iframes pointed towards the ampproject CDN
 	var ifs = document.getElementsByTagName('iframe');
         for (var i=0; i<ifs.length; i++){
             // Check whether the iframe source is pointing towards the AMP cdn
