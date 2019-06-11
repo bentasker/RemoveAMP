@@ -45,7 +45,20 @@ var AMPCheck = debounce(function() {
             // Check whether the iframe source is pointing towards the AMP cdn
             s = ifs[i].getAttribute('src');
             if (s && s.includes('.cdn.ampproject.org/')){
-                window.location.href = s;
+
+                // Extract the source domain name and path from the amp cdn url
+                s=s.split("?")[0];
+                e=s.split("/");
+
+                // Start building a new URL 
+                p=["https:",'',e[5]]
+                // start at position 6 for the path
+                for (var x=6; x<e.length; x++){
+                    p.push(e[x])
+                }
+                newurl = p.join("/");
+
+                window.location.href = newurl;
                 return;
             }
             
