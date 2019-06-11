@@ -6,7 +6,7 @@
 // @run-at document-start
 // @grant none
 // @downloadURL https://github.com/bentasker/RemoveAMP/raw/master/redirect_to_non_amp_sites.user.js
-// @version 1.4.1
+// @version 1.4.21
 //
 //
 //
