@@ -3,6 +3,7 @@
 // @namespace      http
 // @description    Attempts to remove AMP related attributes from Google search results so that you're not redirected to an AMP page in the first place
 // @include        *://*google*/search*
+// @include        *://news.google*/*
 // @run-at document-end
 // @grant none
 // @downloadURL https://github.com/bentasker/RemoveAMP/raw/master/greasemonkey_hook_googlesearch.user.js
@@ -36,6 +37,23 @@ var AMPCheck = debounce(function() {
 			eles[i].removeAttribute(bads[n]);
 		}
 	}
+	
+	
+	// FKAMP-4 Check for iframes pointed towards the ampproject CDN
+	var ifs = document.getElementsByTagName('iframe');
+        for (var i=0; i<ifs.length; i++){
+            // Check whether the iframe source is pointing towards the AMP cdn
+            s = ifs[i].getAttribute('src');
+            if (s && s.includes('.cdn.ampproject.org/')){
+                window.location.href = s;
+                return;
+            }
+            
+            
+        }
+	
+	
+	
 }, 500);
 
 /* Taken from https://davidwalsh.name/javascript-debounce-function */
