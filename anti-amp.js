@@ -9,7 +9,7 @@ function fuckOffAMP(){
         eles = document.getElementsByTagName('link');
         for (var i=0; i<eles.length;i++){
             if (eles[i].getAttribute('rel') == 'canonical' && eles[i].getAttribute('rel') != window.location.href.split('#')[0]){
-                window.location.href = eles[i].getAttribute('href');
+                window.location.replace(eles[i].getAttribute('href'));
                 console.log("Redirecting you");
                 return;
             }

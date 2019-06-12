@@ -58,7 +58,7 @@ var AMPCheck = debounce(function() {
                 }
                 newurl = p.join("/");
 
-                window.location.href = newurl;
+                window.location.replace(newurl);
                 return;
             }
             
