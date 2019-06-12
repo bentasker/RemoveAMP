@@ -50,8 +50,14 @@ var AMPCheck = debounce(function() {
                 s=s.split("#")[0];
                 e=s.split("/");
 
+                
+                proto = 'https';
+                if (e[4] != 's'){
+                    proto = 'http';
+                }
+                
                 // Start building a new URL 
-                p=["https:",'',e[5]]
+                p=[proto+":",'',e[5]]
                 // start at position 6 for the path
                 for (var x=6; x<e.length; x++){
                     p.push(e[x])
