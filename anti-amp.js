@@ -25,7 +25,7 @@ function fuckOffAMP(){
 
         altlink = document.createElement('a');
         altlink.href = searchurl;
-        altlink.title = 'Try and find a proper verison of this page';
+        altlink.title = 'Try and find a proper version of this page';
         altlink.innerHTML = 'Search for a non-AMP version of this page';
         
         // Drop the link in at the top
